@@ -1,0 +1,8 @@
+<div>
+  <p *ngIf="loading"><b>Loading the data. Please wait ...</b></p>
+  <mat-spinner 
+    *ngIf="loading" 
+    [diameter]="30">
+  </mat-spinner>
+  <router-outlet></router-outlet>
+</div>
